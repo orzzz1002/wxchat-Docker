@@ -6,7 +6,7 @@
 docker run -d \
     --name wxchat \
     --restart=always \
-    -p 8088:80 \
+    -p 80:80 \
     ddsderek/wxchat:latest
 ```
 
@@ -17,6 +17,6 @@ services:
         container_name: wxchat
         restart: always
         ports:
-            - '8088:80'
+            - '80:80'
         image: 'ddsderek/wxchat:latest'
 ```
